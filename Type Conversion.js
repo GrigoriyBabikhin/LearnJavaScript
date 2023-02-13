@@ -12,4 +12,4 @@ let a11 ="  -9  " - 5//-14
 let a12 =null + 1//1
 let a13 =undefined + 1//Nan
 let a14 =" \t \n" - 2//-2
-console.log (a14)
+console.log (a15)
