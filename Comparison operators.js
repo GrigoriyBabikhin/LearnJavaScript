@@ -4,5 +4,5 @@ let a3="2" > "12"//true
 let a4=undefined == null//true
 let a5=undefined === null//false
 let a6=null == "\n0\n"//false
-let a7=null === +"\n0\n"//falses
+let a7=null === +"\n0\n"//false
 console.log(a7)
