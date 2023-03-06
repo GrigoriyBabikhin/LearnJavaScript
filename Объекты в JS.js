@@ -84,3 +84,42 @@ console.log(Object.keys(obj).length);//3 */
 /* let obj = { x: 1, y: 2, z: 3 };
 let key = "y";
 console.log(obj[key]);// */
+
+//Исправьте ошибку, допущенную в следующем коде:
+/* let obj = {x: 1, y: 2, z: 3};
+console.log(obj['x']);//1 */
+
+/* let obj = {x: 1, y: 2, z: 3};
+let key = 'x';
+console.log(obj[key]);//1 */
+
+//Ошибка обращения к свойству объекта в JavaScript
+/* let obj = {x: 1, y: 2, z: 3};
+
+let prop = 'x';
+console.log(obj[prop]);//1 */
+
+//В следующем коде ключ должен был взяться из переменной.
+//Исправьте допущенную ошибку:
+/* let key = 'x';
+
+let obj = {
+	[key]: 1,
+	y: 2,
+	z: 3
+};
+console.log(obj);//{ x: 1, y: 2, z: 3 } */
+
+//Сделайте так, чтобы ключи объекта
+//брались из этих переменных.
+
+let obj = {
+  x: 1,
+  y: 2,
+  z: 3,
+};
+let key1 = "x";
+let key2 = "y";
+let key3 = "z";
+
+console.log(obj[key1], obj[key2], obj[key3]); //123
