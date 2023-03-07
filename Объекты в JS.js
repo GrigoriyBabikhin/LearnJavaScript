@@ -112,8 +112,7 @@ console.log(obj);//{ x: 1, y: 2, z: 3 } */
 
 //Сделайте так, чтобы ключи объекта
 //брались из этих переменных.
-
-let obj = {
+/* let obj = {
   x: 1,
   y: 2,
   z: 3,
@@ -121,5 +120,61 @@ let obj = {
 let key1 = "x";
 let key2 = "y";
 let key3 = "z";
+console.log(obj[key1], obj[key2], obj[key3]);//123 */
 
-console.log(obj[key1], obj[key2], obj[key3]); //123
+//Скажите, что выведется в консоль в результате выполнения следующего кода:
+
+/* let obj = {x: 1, y: 2, z: 3};
+
+console.log('x' in obj);//true
+console.log('w' in obj);//false
+ */
+
+//Скажите, что выведется в консоль в результате выполнения следующего кода:
+/* let obj = { x: 1, y: 2, z: 3 };
+delete obj.x;
+console.log("x" in obj); //false
+console.log(Object.keys(obj).length); //2 */
+
+//Типизация объектов в JavaScript
+/* console.log( typeof {x: 1, y: 2, z: 3} );//object */
+/* console.log( typeof {} );//object */
+/* console.log( typeof obj );//undefined */
+/* let obj = {x: 1, y: 2, z: 3};
+console.log( typeof obj['x'] );//number */
+
+//Массивы как объекты в JavaScript
+/* console.log( typeof {x: 1, y: 2, z: 3} );//object */
+/* console.log( typeof [1, 2, 3] );//object */
+
+/* let arr = [1, 2, 3];
+console.log( typeof arr );//object */
+
+/* let arr = [1, 2, 3];
+console.log( typeof arr[0] );//number */
+
+/* let arr = ['1', '2', '3'];
+console.log( typeof arr[0] );//string */
+
+//Отличаем массивы от объектов в JavaScript
+/* console.log(Array.isArray([1,2,3]));//true */
+/* console.log( Array.isArray({x: 1, y: 2, z: 3}) );//false */
+
+//Объекты и примитивы в JavaScript.
+//string, number, boolean, null, undefined, symbol, bigint.всё что не объект это примитив.
+/* let test = {x: 1, y: 2, z: 3};
+console.log(typeof test);//{ x: 1, y: 2, z: 3 } object */
+/* let test = {x: 1, y: 2, z: 3};
+console.log(typeof test.x);//1 number */
+/* let test = [1, 2, 3];
+console.log(typeof test);//[ 1, 2, 3 ] object */
+/* let test = [1, 2, 3];
+console.log(typeof test[1]);//2 number */
+/* let test1 = [1, 2, 3];
+let test2 = 1;
+console.log(typeof test1);//[ 1, 2, 3 ] object */
+/* let test1 = [1, 2, 3];
+let test2 = 1;
+console.log(typeof test1[test2]);//2 number */
+
+//Передача объектов по ссылке в JavaScript
